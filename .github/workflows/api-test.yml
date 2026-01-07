@@ -24,9 +24,9 @@ jobs:
     - name: Flask API'yi başlat
       run: |
         python app.py &
-        sleep 5
+        sleep 10
 
     - name: Postman testlerini çalıştır
       uses: matt-ball/newman-action@master
       with:
-        collection: postman_collection.json
+        collection: ./postman_collection.json
